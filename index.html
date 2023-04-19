@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="games website" name="keywords">
+    <meta content="Games website" name="description">
+    <meta content="sally ali" name="author">
+    <title>Home</title>
+    <!--google font-->
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet">
+    <!--bootstrap css file-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!--fontawsome css file-->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!--main stylesheet file-->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <!--start game section-->
+    <section class="game">
+        <img src="image/wraper.png" alt="game" class="w-100" class="main-img">
+        <!--start navbar-->
+        <nav class="navbar navbar-expand-lg position-sticky top-0 z-3 col-9 mx-auto">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="image/logo-sm.png" alt="logo" class="logo">
+                    <h3 class="d-inline-block text-uppercase m-0 text-white"> Game Reviews
+                    </h3>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="menu navbar-nav ms-auto mb-2 mb-lg-0 text-uppercase small">
+                        <li class="nav-item">
+                            <a class="nav-link active" data-category="mmorpg">mmorpg</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-category="shooter">shooter</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-category="sailing">sailing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-category="permadeath">permadeath</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-category="superhero">superhero</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-category="pixel">pixel</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!--end navabr-->
+
+        <!--start main content-->
+        <section class="home my-5">
+            <div class="container">
+                <div id="gamedata" class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-4">
+
+                </div>
+            </div>
+
+        </section>
+        <!--end main content-->
+    </section>
+    <!--end game section-->
+
+    <!--start details section-->
+    <section class="details d-none">
+        <div class="container">
+            <header class="hstack justify-content-between py-4">
+                <h3>Details Game</h3>
+                <i class="fa fa-close" id="closeBtn"></i>
+            </header>
+            <div class="row g-3" id="detailsData">
+
+            </div>
+        </div>
+    </section>
+    <!--end details section-->
+
+    <!--start loader-->
+    <div class="loading-item d-none">
+        <span class="loader"></span>
+    </div>
+    <!--end loader-->
+
+
+    <!--bootstrap js file-->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js" type="module"></script>
+
+
+</body>
+
+</html>
